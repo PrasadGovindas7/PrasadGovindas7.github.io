@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Durga Prasad Govindas | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- ===== Navigation ===== -->
+<nav class="navbar">
+  <a href="#summary">Summary</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ===== Hero Section ===== -->
 <section class="hero fade-up">
   <div class="hero-text">
     <h1>Durga Prasad Govindas</h1>
@@ -23,33 +33,104 @@
     </a>
   </div>
 
-<div class="hero-visual">
-  <img src="profile.jpg" alt="Durga Prasad Govindas" class="hero-image">
-</div>
-
+  <div class="hero-visual">
+    <img src="profile.jpg" alt="Durga Prasad Govindas" class="hero-image">
+  </div>
 </section>
 
-<div class="fade-up">
+<!-- ===== Professional Summary ===== -->
+<section class="fade-up" id="summary">
 <h2>Professional Summary</h2>
 <p>
-Data professional with a strong foundation in Mathematics, Statistics, and Computer Science, skilled in managing the end-to-end
-data lifecycle — from data collection and transformation to modeling and visualization. Experienced in Python, SQL, Power BI, and Excel,
-with a proven ability to turn complex datasets into actionable insights across telecom, healthcare, and operational analytics.
+Data professional with a strong foundation in Mathematics, Statistics, and Computer Science,
+skilled in managing the end-to-end data lifecycle — from data collection and transformation
+to modeling and visualization. Experienced in Python, SQL, Power BI, and Excel, with a proven
+ability to turn complex datasets into actionable insights across telecom, healthcare, and
+operational analytics.
 </p>
-</div>
-    
-<h2>Skills</h2>
-<ul>
-    <li><b>Data Analysis:</b> EDA, Statistical Analysis, Predictive Modeling</li>
-    <li><b>Programming:</b> Python, R</li>
-    <li><b>Databases:</b> SQL</li>
-    <li><b>Visualization:</b> Power BI, Excel</li>
-    <li><b>Statistical Tools:</b> SPSS</li>
-    <li><b>Modeling:</b> Cox PH, AFT, Mixture Models</li>
-    <li><b>Techniques:</b> Regression, Classification, Clustering</li>
-</ul>
+</section>
 
-<section class="fade-up">
+<!-- ===== Skills ===== -->
+<section class="fade-up" id="skills">
+<h2>Skills</h2>
+
+<div class="skills-grid">
+  <div class="skill-card">Python</div>
+  <div class="skill-card">SQL</div>
+  <div class="skill-card">Power BI</div>
+  <div class="skill-card">Excel</div>
+  <div class="skill-card">R</div>
+  <div class="skill-card">Statistics</div>
+  <div class="skill-card">EDA</div>
+  <div class="skill-card">Machine Learning</div>
+  <div class="skill-card">Regression</div>
+  <div class="skill-card">Classification</div>
+  <div class="skill-card">Clustering</div>
+</div>
+</section>
+
+<!-- ===== Projects ===== -->
+<section class="fade-up" id="projects">
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+  <div class="project-card">
+    <h3>Comprehensive Analysis of Breast Cancer Progression</h3>
+    <p class="project-desc">
+      Statistical and survival analysis on SEER breast cancer data to identify key factors
+      influencing disease progression and patient survival.
+    </p>
+    <ul>
+      <li>Cox PH, AFT & Mixture Models</li>
+      <li>EM Algorithm, AIC, BIC, KS Test</li>
+      <li>Healthcare analytics & survival modeling</li>
+    </ul>
+    <a href="https://drive.google.com/file/d/1k3Hv1hEVNyEZFbA6KM4baXSkRMclo5pj/view"
+       target="_blank" class="project-btn">
+      View Project (Drive)
+    </a>
+  </div>
+
+  <div class="project-card">
+    <h3>IBM HR Analytics – Employee Attrition & Performance</h3>
+    <p class="project-desc">
+      Built predictive models to analyze employee attrition and performance,
+      uncovering key drivers behind workforce turnover.
+    </p>
+    <ul>
+      <li>Logistic Regression, Random Forest</li>
+      <li>Power BI dashboards & KPIs</li>
+      <li>~88% model accuracy</li>
+    </ul>
+    <a href="https://github.com/PrasadGovindas7/IBM-HR-Analytics-Attrition-Analysis"
+       target="_blank" class="project-btn">
+      View on GitHub
+    </a>
+  </div>
+
+  <div class="project-card">
+    <h3>San Francisco Employee Salary Analysis & Classification</h3>
+    <p class="project-desc">
+      Large-scale salary data analysis to understand compensation patterns
+      and classify employees into salary tiers.
+    </p>
+    <ul>
+      <li>Data cleaning & feature engineering</li>
+      <li>ML pipeline with Column Transformer</li>
+      <li>Logistic Regression for interpretability</li>
+    </ul>
+    <a href="https://github.com/PrasadGovindas7/San-Francisco-Employee-Salary-Analysis-2011-2018-"
+       target="_blank" class="project-btn">
+      View on GitHub
+    </a>
+  </div>
+
+</div>
+</section>
+
+<!-- ===== Experience ===== -->
+<section class="fade-up" id="experience">
 <h2>Experience</h2>
 
 <div class="timeline">
@@ -83,7 +164,7 @@ with a proven ability to turn complex datasets into actionable insights across t
       <ul>
         <li>Working on real-world data science and machine learning projects</li>
         <li>Conducting EDA and data visualization using Python</li>
-        <li>Building predictive models using Linear Regression, Decision Trees, Random Forest, and K-Means</li>
+        <li>Building predictive models using Regression, Trees, Random Forest, and K-Means</li>
         <li>Preparing reports and dashboards using Power BI</li>
       </ul>
     </div>
@@ -92,26 +173,27 @@ with a proven ability to turn complex datasets into actionable insights across t
 </div>
 </section>
 
-<section class="fade-up">
+<!-- ===== Education ===== -->
+<section class="fade-up" id="education">
 <h2>Education</h2>
 
 <div class="education-block">
   <p>
-    <b>Bachelor of Science (Mathematics, Statistics and Computer Science)</b><br>
+    <b>B.Sc. (Mathematics, Statistics and Computer Science)</b><br>
     Parvathaneni Brahmayya College of Arts and Science |
     <i>Dec 2021 – May 2024</i> |
     <b>CGPA: 8.67 / 10</b>
   </p>
 
   <p>
-    <b>Class 12<sup>th</sup> – BIEAP (Maths, Physics and Chemistry)</b><br>
+    <b>Class 12 – BIEAP (MPC)</b><br>
     Sri Chaitanya Junior College |
     <i>Jun 2019 – Apr 2021</i> |
-    <b>Percentage: 95.2%</b>
+    <b>95.2%</b>
   </p>
 
   <p>
-    <b>Class 10<sup>th</sup> – SSC</b><br>
+    <b>Class 10 – SSC</b><br>
     GDET MC High School |
     <i>Jun 2013 – Mar 2019</i> |
     <b>GPA: 9.8 / 10</b>
@@ -119,105 +201,26 @@ with a proven ability to turn complex datasets into actionable insights across t
 </div>
 </section>
 
-<section class="fade-up">
-<h2>Skills</h2>
+<!-- ===== Contact ===== -->
+<section class="fade-up" id="contact">
+<h2>Contact</h2>
 
-<div class="skills-grid">
+<p>📧 <b>Email:</b>
+<a href="mailto:prasadgovindas6@gmail.com">prasadgovindas6@gmail.com</a>
+</p>
 
-  <div class="skill-card">Python</div>
-  <div class="skill-card">SQL</div>
-  <div class="skill-card">Power BI</div>
-  <div class="skill-card">Excel</div>
-  <div class="skill-card">R</div>
-  <div class="skill-card">Statistics</div>
-  <div class="skill-card">EDA</div>
-  <div class="skill-card">Machine Learning</div>
-  <div class="skill-card">Data Cleaning</div>
-  <div class="skill-card">Regression</div>
-  <div class="skill-card">Classification</div>
-  <div class="skill-card">Clustering</div>
+<p>🔗 <b>LinkedIn:</b>
+<a href="https://linkedin.com/in/durga-prasad-govindas-8884a627a" target="_blank">
+linkedin.com/in/durga-prasad-govindas-8884a627a
+</a>
+</p>
 
-</div>
+<p>📍 <b>Location:</b> Vijayawada, India</p>
 </section>
 
-
-<section class="fade-up">
-<h2>Projects</h2>
-
-<div class="projects-grid">
-
-  <!-- Project 1 -->
-  <div class="project-card">
-    <h3>Comprehensive Analysis of Breast Cancer Progression</h3>
-    <p class="project-desc">
-      Statistical and survival analysis on SEER breast cancer data to identify
-      key factors influencing disease progression and patient survival.
-    </p>
-    <ul>
-      <li>Cox PH, AFT & Mixture Models</li>
-      <li>EM algorithm, AIC, BIC, KS Test</li>
-      <li>Healthcare analytics & survival modeling</li>
-    </ul>
-    <a href="https://drive.google.com/file/d/1k3Hv1hEVNyEZFbA6KM4baXSkRMclo5pj/view?usp=sharing" target="_blank" class="project-btn">
-      View Project (Drive)
-    </a>
-  </div>
-
-  <!-- Project 2 -->
-  <div class="project-card">
-    <h3>IBM HR Analytics – Employee Attrition & Performance</h3>
-    <p class="project-desc">
-      Built predictive models to analyze employee attrition and performance,
-      uncovering key drivers behind workforce turnover.
-    </p>
-    <ul>
-      <li>Logistic Regression, Random Forest</li>
-      <li>Power BI dashboards & KPIs</li>
-      <li>~88% model accuracy</li>
-    </ul>
-    <a href="https://github.com/PrasadGovindas7/IBM-HR-Analytics-Attrition-Analysis.git"
-       target="_blank" class="project-btn">
-      View on GitHub
-    </a>
-  </div>
-
-  <!-- Project 3 -->
-  <div class="project-card">
-    <h3>San Francisco Employee Salary Analysis & Classification</h3>
-    <p class="project-desc">
-      Large-scale salary data analysis to understand compensation patterns
-      and classify employees into salary tiers.
-    </p>
-    <ul>
-      <li>Data cleaning & feature engineering</li>
-      <li>ML pipeline with Column Transformer</li>
-      <li>Logistic Regression for interpretability</li>
-    </ul>
-    <a href="https://github.com/PrasadGovindas7/San-Francisco-Employee-Salary-Analysis-2011-2018-.git"
-       target="_blank" class="project-btn">
-      View on GitHub
-    </a>
-  </div>
-
-</div>
-</section>
-
-<h2>Achievements</h2>
-<ul>
-    <li>Research paper presented at Acharya Nagarjuna University</li>
-    <li>Top 5% academic performer</li>
-</ul>
-
-<h2>Certifications</h2>
-<ul>
-    <li>PwC Switzerland Power BI Job Simulation – Forage</li>
-    <li>Paper Presentation – Acharya Nagarjuna University</li>
-    <li>Workshop on Statistics & Data Science using Python – ICMR-NIRT</li>
-</ul>
-
-    <script>
+<!-- ===== Animation Script ===== -->
+<script>
 const elements = document.querySelectorAll('.fade-up');
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -225,31 +228,8 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 });
-
 elements.forEach(el => observer.observe(el));
 </script>
-
-<section class="fade-up">
-<h2>Contact</h2>
-
-<p>
-📧 <b>Email:</b>
-<a href="mailto:prasadgovindas6@gmail.com">
-prasadgovindas6@gmail.com
-</a>
-</p>
-
-<p>
-🔗 <b>LinkedIn:</b>
-<a href="https://linkedin.com/in/durga-prasad-govindas-8884a627a" target="_blank">
-linkedin.com/in/durga-prasad-govindas-8884a627a
-</a>
-</p>
-
-<p>
-📍 <b>Location:</b> Vijayawada, India
-</p>
-</section>
 
 </body>
 </html>

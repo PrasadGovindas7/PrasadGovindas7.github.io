@@ -23,13 +23,15 @@ Vijayawada <br>
 
 <hr>
 
+<div class="fade-up">
 <h2>Professional Summary</h2>
 <p>
 Data professional with a strong foundation in Mathematics, Statistics, and Computer Science, skilled in managing the end-to-end
 data lifecycle — from data collection and transformation to modeling and visualization. Experienced in Python, SQL, Power BI, and Excel,
 with a proven ability to turn complex datasets into actionable insights across telecom, healthcare, and operational analytics.
 </p>
-
+</div>
+    
 <h2>Skills</h2>
 <ul>
     <li><b>Data Analysis:</b> EDA, Statistical Analysis, Predictive Modeling</li>
@@ -96,6 +98,7 @@ GDET MC HIGH SCHOOL |
 
 <h2>Projects</h2>
 
+<div class="project-card fade-up">
 <h3>Comprehensive Analysis of Breast Cancer Progression</h3>
 <ul>
     <li>Survival analysis on SEER breast cancer dataset</li>
@@ -103,20 +106,31 @@ GDET MC HIGH SCHOOL |
     <li>Identified key predictors affecting patient survival</li>
 </ul>
 
+<p>
+<b>Project Files (Google Drive):</b>
+<a href="https://drive.google.com/file/d/1k3Hv1hEVNyEZFbA6KM4baXSkRMclo5pj/view?usp=sharing" target="_blank">
+View Project
+</a>
+</p>
+</div>
+
+<div class="project-card fade-up">
 <h3>IBM HR Analytics – Employee Attrition & Performance</h3>
 <ul>
     <li>Predicted employee attrition using ML models</li>
     <li>Achieved ~88% accuracy</li>
     <li>Built Power BI dashboards</li>
 </ul>
-
+    
 <p>
 <b>GitHub Repository:</b>
 <a href="https://github.com/PrasadGovindas7/IBM-HR-Analytics-Attrition-Analysis.git" target="_blank">
-https://github.com/PrasadGovindas7/IBM-HR-Analytics-Attrition-Analysis.git
+View on GitHub
 </a>
 </p>
+</div>
 
+<div class="project-card fade-up">
 <h3>San Francisco Employee Salary Analysis & Classification</h3>
 <ul>
     <li>Salary classification using ML pipelines</li>
@@ -127,9 +141,10 @@ https://github.com/PrasadGovindas7/IBM-HR-Analytics-Attrition-Analysis.git
 <p>
 <b>GitHub Repository:</b>
 <a href="https://github.com/PrasadGovindas7/San-Francisco-Employee-Salary-Analysis-2011-2018-.git" target="_blank">
-https://github.com/PrasadGovindas7/San-Francisco-Employee-Salary-Analysis-2011-2018-.git
+View on GitHub
 </a>
 </p>
+</div>
 
 <h2>Achievements</h2>
 <ul>
@@ -143,6 +158,20 @@ https://github.com/PrasadGovindas7/San-Francisco-Employee-Salary-Analysis-2011-2
     <li>Paper Presentation – Acharya Nagarjuna University</li>
     <li>Workshop on Statistics & Data Science using Python – ICMR-NIRT</li>
 </ul>
+
+    <script>
+const elements = document.querySelectorAll('.fade-up');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>

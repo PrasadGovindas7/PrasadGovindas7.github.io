@@ -201,12 +201,12 @@ section {
 }
 
 .hero-image {
-    width: 230px;
-    height: 230px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid #fff;
-    box-shadow: 0 12px 30px rgba(10, 102, 194, 0.35);
+    border: 8px solid #fff;
+    box-shadow: 0 16px 40px rgba(10, 102, 194, 0.35);
     animation: floatIn 0.8s ease forwards;
 }
 

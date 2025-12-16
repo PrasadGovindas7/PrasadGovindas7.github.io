@@ -1,0 +1,82 @@
+/* ===== Global ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #222;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* ===== Headings ===== */
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    padding-bottom: 4px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* ===== Text ===== */
+p {
+    margin: 6px 0 12px;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* ===== Links ===== */
+a {
+    color: #0a66c2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Section Spacing ===== */
+hr {
+    border: none;
+    border-top: 1px solid #aaa;
+    margin: 10px 0 15px;
+}
+
+/* ===== Contact Info ===== */
+.contact {
+    font-size: 14px;
+    color: #444;
+}
+
+/* ===== Projects ===== */
+.project-link {
+    font-size: 14px;
+}
+
+/* ===== Footer (Optional) ===== */
+footer {
+    margin-top: 50px;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}

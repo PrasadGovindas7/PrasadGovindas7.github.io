@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Durga Prasad Govindas | Data Analyst Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Font: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Your CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,11 +31,10 @@
   </div>
 </nav>
 
-
-<!-- ===== Main Content Wrapper ===== -->
+<!-- ===== Main Content ===== -->
 <div class="container">
 
-<!-- ===== Hero Section ===== -->
+<!-- ===== Hero ===== -->
 <section class="hero fade-up">
   <div class="hero-text">
     <h1>Durga Prasad Govindas</h1>
@@ -55,7 +55,7 @@
   </div>
 </section>
 
-<!-- ===== Professional Summary ===== -->
+<!-- ===== Summary ===== -->
 <section class="fade-up" id="summary">
   <h2>Professional Summary</h2>
   <p>
@@ -70,7 +70,6 @@
 <!-- ===== Skills ===== -->
 <section class="fade-up" id="skills">
   <h2>Skills</h2>
-
   <div class="skills-grid">
     <div class="skill-card">Python</div>
     <div class="skill-card">SQL</div>
@@ -237,10 +236,10 @@
 
 </div>
 
-<!-- ===== Fade-up Animation Script ===== -->
+<!-- ===== Scripts ===== -->
 <script>
+/* Fade-up animation */
 const elements = document.querySelectorAll('.fade-up');
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -248,8 +247,38 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 });
-
 elements.forEach(el => observer.observe(el));
+
+/* Auto-active navbar */
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section[id]');
+
+function activateNavLink() {
+  let scrollY = window.pageYOffset;
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${sectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}
+
+window.addEventListener('scroll', activateNavLink);
+
+/* Navbar shadow on scroll */
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 20);
+});
 </script>
 
 </body>

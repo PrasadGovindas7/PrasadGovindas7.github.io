@@ -1,12 +1,13 @@
 /* ===== Global ===== */
+:root {
+    --primary: #0a66c2;   /* LinkedIn blue */
+    --secondary: #f5f7fa; /* light background */
+    --text-dark: #1f2933;
+}
+
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-    color: #222;
-    line-height: 1.6;
-    background-color: #ffffff;
+    color: var(--text-dark);
+    background-color: var(--secondary);
 }
 
 /* ===== Headings ===== */
@@ -16,13 +17,9 @@ h1 {
 }
 
 h2 {
-    font-size: 22px;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #000;
-    padding-bottom: 4px;
+    border-bottom: 2px solid var(--primary);
 }
+
 
 h3 {
     font-size: 18px;
@@ -47,9 +44,9 @@ li {
 
 /* ===== Links ===== */
 a {
-    color: #0a66c2;
-    text-decoration: none;
+    color: var(--primary);
 }
+
 
 a:hover {
     text-decoration: underline;
@@ -93,4 +90,39 @@ footer {
 
 .resume-btn:hover {
     background-color: #084d94;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.resume-btn {
+    background-color: var(--primary);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+.project-card {
+    padding: 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: #eef3f8;
 }

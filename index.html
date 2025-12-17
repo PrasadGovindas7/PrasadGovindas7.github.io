@@ -183,7 +183,7 @@ window.addEventListener('scroll', () => {
     if (scrollY >= sec.offsetTop - 140) current = sec.id;
   });
   links.forEach(link => {
-    link.classList.toggle('active', link.getAttribute('href') === #${current});
+    link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
   });
 });
 </script>

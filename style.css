@@ -59,7 +59,7 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  min-height: calc(100vh - 80px);
+  padding: 120px 0 80px;
   display: flex;
   align-items: center;
 }
@@ -130,10 +130,11 @@ body {
 /* ===== SECTIONS ===== */
 .section {
   padding: 100px 0;
+  background: #f8fafc;
 }
 
 .section.light {
-  background: var(--light);
+  background: #ffffff;
 }
 
 .section.white {

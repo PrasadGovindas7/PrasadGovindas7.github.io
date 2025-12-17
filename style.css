@@ -93,13 +93,19 @@ body {
 }
 
 /* ===== SECTIONS ===== */
+/* ===== Section Backgrounds ===== */
 .section {
   padding: 100px 0;
 }
 
 .section.light {
-  background: var(--light);
+  background: #f8fafc;   /* Projects, Experience, Education */
 }
+
+.section.white {
+  background: #ffffff;   /* Hero, Skills, Contact */
+}
+
 
 h2::after {
   content: "";
@@ -145,6 +151,15 @@ h2::after {
   padding: 28px;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.experience-block,
+.edu-block {
+  background: #ffffff;
+  padding: 28px 32px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  margin-bottom: 32px;
 }
 
 /* ===== CONTACT ===== */

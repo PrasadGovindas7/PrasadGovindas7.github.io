@@ -32,7 +32,7 @@
 
 <!-- ===== HERO ===== -->
 <section id="home" class="hero">
-  <div class="container hero-content">
+  <div class="container hero-grid">
     <div class="hero-text">
       <h1>Durga Prasad Govindas</h1>
       <h2>Data Scientist | Data Analyst</h2>
@@ -79,15 +79,14 @@
 </section>
 
 <!-- ===== PROJECTS ===== -->
-<section id="projects" class="section light">
+<section id="projects" class="section alt">
   <div class="container">
     <h2>Projects</h2>
 
     <div class="projects-grid">
-
       <div class="project-card">
         <h3>Breast Cancer Progression Analysis</h3>
-        <p>Statistical & survival analysis on SEER data to identify key factors affecting patient survival.</p>
+        <p>Statistical & survival analysis on SEER data.</p>
         <ul>
           <li>Cox PH, AFT & Mixture Models</li>
           <li>EM Algorithm, AIC, BIC</li>
@@ -95,13 +94,13 @@
         </ul>
         <a class="btn primary" target="_blank"
            href="https://drive.google.com/file/d/1k3Hv1hEVNyEZFbA6KM4baXSkRMclo5pj/view">
-          <i class="fa-brands fa-google-drive"></i> View Project
+          View Project
         </a>
       </div>
 
       <div class="project-card">
         <h3>IBM HR Analytics – Attrition</h3>
-        <p>Predictive modeling to analyze employee attrition and performance drivers.</p>
+        <p>Predictive modeling for employee attrition.</p>
         <ul>
           <li>Logistic Regression, Random Forest</li>
           <li>Power BI dashboards</li>
@@ -109,13 +108,13 @@
         </ul>
         <a class="btn primary" target="_blank"
            href="https://github.com/PrasadGovindas7/IBM-HR-Analytics-Attrition-Analysis">
-          <i class="fa-brands fa-github"></i> GitHub
+          GitHub
         </a>
       </div>
 
       <div class="project-card">
         <h3>SF Employee Salary Analysis</h3>
-        <p>Large-scale salary analysis & classification using ML pipelines.</p>
+        <p>Large-scale salary classification.</p>
         <ul>
           <li>Feature engineering</li>
           <li>Column Transformer</li>
@@ -123,10 +122,9 @@
         </ul>
         <a class="btn primary" target="_blank"
            href="https://github.com/PrasadGovindas7/San-Francisco-Employee-Salary-Analysis-2011-2018-">
-          <i class="fa-brands fa-github"></i> GitHub
+          GitHub
         </a>
       </div>
-
     </div>
   </div>
 </section>
@@ -140,10 +138,10 @@
       <h3>Data Analyst Intern – Codegnan IT Solutions</h3>
       <p class="meta">Aug 2023 – Dec 2023 | Vijayawada</p>
       <ul>
-        <li>Collected, cleaned, and transformed large datasets using Python, R, and SQL</li>
-        <li>Performed EDA and statistical analysis to identify trends and KPIs</li>
-        <li>Built Power BI dashboards and Excel reports</li>
-        <li>Applied regression, classification, and correlation techniques</li>
+        <li>Collected, cleaned & transformed datasets using Python, R & SQL</li>
+        <li>Performed EDA & statistical analysis to identify KPIs</li>
+        <li>Built Power BI dashboards & Excel reports</li>
+        <li>Applied regression, classification & correlation techniques</li>
       </ul>
     </div>
 
@@ -151,35 +149,32 @@
       <h3>Data Science Intern – Unified Mentor</h3>
       <p class="meta">Oct 2025 – Present</p>
       <ul>
-        <li>Working on real-world ML and data science projects</li>
-        <li>Building predictive models (Regression, Trees, K-Means)</li>
-        <li>Preparing Power BI dashboards and reports</li>
+        <li>Working on real-world ML projects</li>
+        <li>Built predictive models (Regression, Trees, K-Means)</li>
+        <li>Prepared Power BI dashboards & insights</li>
       </ul>
     </div>
   </div>
 </section>
 
 <!-- ===== EDUCATION ===== -->
-<section id="education" class="section light">
+<section id="education" class="section alt">
   <div class="container">
     <h2>Education</h2>
 
     <div class="edu-block">
       <h3>B.Sc. (Mathematics, Statistics & CS)</h3>
-      <p>Parvathaneni Brahmayya College | 2021 – 2024</p>
-      <strong>CGPA: 8.67 / 10</strong>
+      <p class="meta">2021 – 2024 | CGPA: 8.67 / 10</p>
     </div>
 
     <div class="edu-block">
-      <h3>Class 12 (MPC)</h3>
-      <p>Sri Chaitanya Junior College | 2019 – 2021</p>
-      <strong>95.2%</strong>
+      <h3>Class 12 – MPC</h3>
+      <p class="meta">2019 – 2021 | 95.2%</p>
     </div>
 
     <div class="edu-block">
-      <h3>Class 10 (SSC)</h3>
-      <p>GDET MC High School | 2013 – 2019</p>
-      <strong>GPA: 9.8 / 10</strong>
+      <h3>Class 10 – SSC</h3>
+      <p class="meta">2013 – 2019 | GPA: 9.8 / 10</p>
     </div>
   </div>
 </section>
@@ -199,16 +194,14 @@
 </section>
 
 <script>
-/* Active navbar */
 const links = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', () => {
   let current = '';
-  sections.forEach(section => {
-    if (scrollY >= section.offsetTop - 120) current = section.id;
+  sections.forEach(sec => {
+    if (scrollY >= sec.offsetTop - 150) current = sec.id;
   });
-
   links.forEach(link => {
     link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
   });

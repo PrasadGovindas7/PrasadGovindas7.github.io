@@ -73,9 +73,12 @@ body {
 
 .hero-image img {
   width: 260px;   
+  height: 320px;
+  object-fit: cover;
   max-width: 100%;
-  border-radius: 50%;
-  border: 10px solid rgba(10,102,194,0.12);
+  border-radius: 24%;
+  border: 8px solid rgba(10,102,194,0.15);
+  box-shadow: 0 18px 40px rgba(10,102,194,0.25);
 }
 
 .hero-text h1 {
@@ -107,6 +110,7 @@ body {
 .btn {
   padding: 10px 18px;
   border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   font-weight: 600;
   display: inline-flex;
@@ -123,6 +127,11 @@ body {
 .btn.outline {
   border: 1px solid var(--border);
   color: var(--dark);
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(10, 102, 194, 0.3);
 }
 
 /* ===== SECTIONS ===== */
@@ -166,11 +175,12 @@ h2::after {
   border-radius: 14px;
   font-weight: 500;
   box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;;
 }
 
 .skill-card:hover {
   transform: translateY(-6px);
+  box-shadow: 0 14px 34px rgba(10, 102, 194, 0.15);
 }
 
 /* ===== PROJECTS ===== */
@@ -185,11 +195,17 @@ h2::after {
   padding: 28px;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .project-card ul {
   padding-left: 18px;
   margin-bottom: 18px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 50px rgba(10, 102, 194, 0.18);
 }
 
 /* ===== EXPERIENCE BOXES ===== */
@@ -207,8 +223,9 @@ h2::after {
 }
 
 .experience-block:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(10,102,194,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(10, 102, 194, 0.18);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .experience-block h3 {
@@ -232,6 +249,7 @@ h2::after {
   padding: 26px 30px;
   border-radius: 16px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .edu-block h3 {
@@ -246,6 +264,13 @@ h2::after {
 .edu-block strong {
   display: inline-block;
   margin-top: 6px;
+}
+
+
+.edu-block:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(10, 102, 194, 0.18);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 /* ===== CONTACT ===== */
@@ -263,6 +288,7 @@ h2::after {
   align-items: center;
   gap: 14px;
   box-shadow: 0 10px 26px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-card i {
@@ -274,6 +300,11 @@ h2::after {
   text-decoration: none;
   color: var(--dark);
   font-weight: 500;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(10, 102, 194, 0.18);
 }
 
 /* ===== RESPONSIVE ===== */

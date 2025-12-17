@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: var(--dark);
-  background: #ffffff;
+  background: #f5f7fb;
   line-height: 1.7;
 }
 
@@ -57,6 +57,11 @@ body {
 /* ===== HERO ===== */
 .hero {
   padding: 120px 0 80px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f5f7fb 100%
+  );
 }
 
 .hero-grid {
@@ -82,10 +87,13 @@ body {
 }
 
 .hero-image img {
-  width: 320px;
-  max-width: 100%;
-  border-radius: 28%;
+  background: radial-gradient(circle at top,
+    rgba(10,102,194,0.18),
+    transparent 70%);
+  padding: 14px;
+  border-radius: 32%;
 }
+
 
 /* ===== BUTTONS ===== */
 .btn {
@@ -112,7 +120,7 @@ body {
 /* ===== SECTIONS ===== */
 .section {
   padding: 100px 0;
-  background: #ffffff;
+  background: transparent;
 }
 
 .section.light {

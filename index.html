@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Durga Prasad Govindas | Data Analyst Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -21,7 +21,7 @@
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar">
   <div class="nav-center">
-    <a href="#hero" class="nav-link active">Summary</a>
+    <a href="#summary" class="nav-link active">Summary</a>
     <a href="#skills" class="nav-link">Skills</a>
     <a href="#projects" class="nav-link">Projects</a>
     <a href="#experience" class="nav-link">Experience</a>
@@ -31,43 +31,63 @@
 </nav>
 
 <!-- ===== HERO ===== -->
-<section id="hero" class="hero">
+<section class="hero section fade-up">
   <div class="hero-content">
     <div class="hero-text">
       <h1>Durga Prasad Govindas</h1>
-      <h2>Data Scientist | Data Analyst</h2>
+      <h2 class="hero-role">Data Scientist | Data Analyst</h2>
 
-      <p>
+      <p class="hero-desc">
         Entry-level Data Scientist with strong foundations in Statistics, Machine Learning,
         and Data Analysis. Skilled in Python, SQL, Power BI, and exploratory data analysis (EDA),
         with hands-on experience in data cleaning, feature engineering, predictive modeling,
         and transforming complex datasets into actionable business insights.
       </p>
 
+      <!-- Hero Buttons -->
       <div class="hero-actions">
-        <a href="Durga_Prasad_Govindas_Resume.pdf" target="_blank" class="btn primary">
+        <a href="Durga_Prasad_Govindas_Resume.pdf" target="_blank" class="btn-primary">
           <i class="fa-solid fa-download"></i> Download Resume
         </a>
-        <a href="https://github.com/PrasadGovindas7" target="_blank" class="btn outline">
+
+        <a href="https://github.com/PrasadGovindas7" target="_blank" class="btn-outline">
           <i class="fa-brands fa-github"></i> GitHub
         </a>
-        <a href="mailto:prasadgovindas6@gmail.com" class="btn outline">
+
+        <a href="mailto:prasadgovindas6@gmail.com" class="btn-outline">
           <i class="fa-solid fa-envelope"></i> Email
         </a>
-        <a href="https://linkedin.com/in/durga-prasad-govindas-8884a627a" target="_blank" class="btn outline">
+
+        <a href="https://linkedin.com/in/durga-prasad-govindas-8884a627a" target="_blank" class="btn-outline">
           <i class="fa-brands fa-linkedin"></i> LinkedIn
         </a>
       </div>
     </div>
 
-    <div class="hero-image">
+    <div class="hero-image-wrapper">
       <img src="profile.jpg" alt="Durga Prasad Govindas">
     </div>
   </div>
 </section>
 
+<!-- ===== SUMMARY ===== -->
+<section id="summary" class="section fade-up">
+  <h2>Professional Summary</h2>
+  <p>
+    Entry-level Data Scientist with a strong foundation in Mathematics, Statistics, and Computer Science,
+    experienced in end-to-end data science workflows including data collection, cleaning,
+    exploratory data analysis (EDA), feature engineering, statistical modeling, and machine learning.
+  </p>
+  <p>
+    Proficient in Python, SQL, Power BI, and Excel, with hands-on experience building predictive models
+    using Regression, Decision Trees, Random Forest, K-Means, and survival analysis techniques.
+    Demonstrated ability to transform complex datasets into actionable insights across healthcare,
+    HR analytics, and operational analytics.
+  </p>
+</section>
+
 <!-- ===== SKILLS ===== -->
-<section id="skills" class="section">
+<section id="skills" class="section fade-up">
   <h2>Skills</h2>
   <div class="skills-grid">
     <span>Python</span>
@@ -88,10 +108,11 @@
 </section>
 
 <!-- ===== PROJECTS ===== -->
-<section id="projects" class="section">
+<section id="projects" class="section fade-up">
   <h2>Projects</h2>
 
   <div class="projects-grid">
+
     <div class="project-card">
       <h3>Comprehensive Analysis of Breast Cancer Progression</h3>
       <p>
@@ -103,123 +124,152 @@
         <li>EM Algorithm, AIC, BIC, KS Test</li>
         <li>Healthcare analytics & survival modeling</li>
       </ul>
-      <a href="https://drive.google.com/file/d/1k3Hv1hEVNyEZFbA6KM4baXSkRMclo5pj/view" target="_blank">
-        <i class="fa-brands fa-google-drive"></i> View Project
-      </a>
+
+      <div class="project-links">
+        <a href="https://drive.google.com/file/d/1k3Hv1hEVNyEZFbA6KM4baXSkRMclo5pj/view" target="_blank">
+          <i class="fa-brands fa-google-drive"></i> Drive
+        </a>
+      </div>
     </div>
 
     <div class="project-card">
-      <h3>IBM HR Analytics – Employee Attrition</h3>
+      <h3>IBM HR Analytics – Employee Attrition & Performance</h3>
+      <p>
+        Built predictive models to analyze employee attrition and performance,
+        uncovering key workforce drivers.
+      </p>
       <ul>
         <li>Logistic Regression, Random Forest</li>
         <li>Power BI dashboards & KPIs</li>
-        <li>~88% accuracy</li>
+        <li>~88% model accuracy</li>
       </ul>
-      <a href="https://github.com/PrasadGovindas7/IBM-HR-Analytics-Attrition-Analysis" target="_blank">
-        <i class="fa-brands fa-github"></i> View on GitHub
-      </a>
+
+      <div class="project-links">
+        <a href="https://github.com/PrasadGovindas7/IBM-HR-Analytics-Attrition-Analysis" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
 
     <div class="project-card">
-      <h3>San Francisco Employee Salary Analysis</h3>
+      <h3>San Francisco Employee Salary Analysis & Classification</h3>
+      <p>
+        Large-scale salary data analysis to understand compensation patterns
+        and classify employees into salary tiers.
+      </p>
       <ul>
         <li>Data cleaning & feature engineering</li>
         <li>Column Transformer pipeline</li>
         <li>Logistic Regression</li>
       </ul>
-      <a href="https://github.com/PrasadGovindas7/San-Francisco-Employee-Salary-Analysis-2011-2018-" target="_blank">
-        <i class="fa-brands fa-github"></i> View on GitHub
-      </a>
+
+      <div class="project-links">
+        <a href="https://github.com/PrasadGovindas7/San-Francisco-Employee-Salary-Analysis-2011-2018-" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
+
   </div>
 </section>
 
 <!-- ===== EXPERIENCE ===== -->
-<section id="experience" class="section alt-bg">
+<section id="experience" class="section fade-up">
   <h2>Experience</h2>
 
-  <div class="card">
-    <h3>Data Analyst Intern</h3>
-    <p class="meta">Codegnan IT Solutions Pvt. Ltd. | Aug 2023 – Dec 2023</p>
-    <ul>
-      <li>Collected, cleaned, and transformed large datasets using Python, R, and SQL</li>
-      <li>Performed Exploratory Data Analysis (EDA) and statistical analysis</li>
-      <li>Built Power BI dashboards and Excel reports for insights</li>
-      <li>Applied regression, classification, and correlation techniques</li>
-    </ul>
-  </div>
+  <div class="experience-timeline">
 
-  <div class="card">
-    <h3>Data Science Intern</h3>
-    <p class="meta">Unified Mentor | Oct 2025 – Present</p>
-    <ul>
-      <li>Working on real-world data science and machine learning projects</li>
-      <li>Conducting EDA and visualization using Python</li>
-      <li>Building predictive models using ML algorithms</li>
-      <li>Preparing reports and dashboards using Power BI</li>
-    </ul>
+    <div class="experience-card">
+      <h3>Data Analyst Intern</h3>
+      <span>Codegnan IT Solutions Pvt. Ltd. | Aug 2023 – Dec 2023</span>
+      <ul>
+        <li>Built and evaluated statistical and ML models on real-world datasets</li>
+        <li>Performed data cleaning, EDA, and statistical analysis</li>
+        <li>Worked with Python, R, SQL workflows</li>
+        <li>Created Power BI dashboards & Excel reports</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <h3>Data Science Intern</h3>
+      <span>Unified Mentor | Oct 2025 – Present</span>
+      <ul>
+        <li>Predictive modeling & machine learning</li>
+        <li>EDA and visualization</li>
+        <li>Power BI reporting</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
 <!-- ===== EDUCATION ===== -->
-<section id="education" class="section alt-bg">
+<section id="education" class="section fade-up">
   <h2>Education</h2>
 
-  <div class="card">
-    <h3>B.Sc. (Mathematics, Statistics & Computer Science)</h3>
-    <p>Parvathaneni Brahmayya College of Arts and Science</p>
-    <p class="meta">Dec 2021 – May 2024 | CGPA: 8.67 / 10</p>
-  </div>
+  <div class="education-grid">
 
-  <div class="card">
-    <h3>Class 12 – BIEAP (MPC)</h3>
-    <p>Sri Chaitanya Junior College</p>
-    <p class="meta">Jun 2019 – Apr 2021 | Percentage: 95.2%</p>
-  </div>
+    <div class="education-card">
+      <h3>B.Sc. (Mathematics, Statistics & CS)</h3>
+      <p>Parvathaneni Brahmayya College</p>
+      <span>2021 – 2024 | CGPA: 8.67 / 10</span>
+    </div>
 
-  <div class="card">
-    <h3>Class 10 – SSC</h3>
-    <p>GDET MC High School</p>
-    <p class="meta">Jun 2013 – Mar 2019 | GPA: 9.8 / 10</p>
+    <div class="education-card">
+      <h3>Class 12 (MPC)</h3>
+      <p>Sri Chaitanya Junior College</p>
+      <span>2019 – 2021 | 95.2%</span>
+    </div>
+
+    <div class="education-card">
+      <h3>Class 10 (SSC)</h3>
+      <p>GDET MC High School</p>
+      <span>2013 – 2019 | GPA: 9.8 / 10</span>
+    </div>
+
   </div>
 </section>
 
 <!-- ===== CONTACT ===== -->
-<section id="contact" class="section contact">
+<section id="contact" class="section fade-up">
   <h2>Get In Touch</h2>
 
-  <div class="contact-grid">
-    <div class="contact-info">
-      <div><i class="fa-solid fa-envelope"></i> prasadgovindas6@gmail.com</div>
-      <div><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</div>
-      <div><i class="fa-brands fa-github"></i> GitHub Profile</div>
-      <div><i class="fa-solid fa-location-dot"></i> Vijayawada East, Andhra Pradesh</div>
+  <div class="contact-cards">
+    <div class="contact-card">
+      <i class="fa-solid fa-envelope"></i>
+      <span>prasadgovindas6@gmail.com</span>
     </div>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="contact-card">
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="https://linkedin.com/in/durga-prasad-govindas-8884a627a" target="_blank">
+        LinkedIn Profile
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/PrasadGovindas7" target="_blank">
+        GitHub Profile
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>Vijayawada East, Andhra Pradesh, India</span>
+    </div>
   </div>
 </section>
 
+<!-- ===== JS ===== -->
 <script>
-const links = document.querySelectorAll('.nav-link');
-const sections = document.querySelectorAll('section');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('show');
+  });
+}, { threshold: 0.2 });
 
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(sec => {
-    if (pageYOffset >= sec.offsetTop - 120) {
-      current = sec.getAttribute('id');
-    }
-  });
-  links.forEach(a => {
-    a.classList.toggle('active', a.getAttribute('href') === `#${current}`);
-  });
-});
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 </script>
 
 </body>
